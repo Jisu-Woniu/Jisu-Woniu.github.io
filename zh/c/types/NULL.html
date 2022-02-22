@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../types.html" title="c/types">types</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types">类型支持</a> </td></tr>
@@ -112,13 +112,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../types.html" title="c/types">类型支持</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../types.html" title="c/types">类型支持</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size_t.html" title="c/types/size t"><span class="t-lines"><span>size_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="ptrdiff_t.html" title="c/types/ptrdiff t"><span class="t-lines"><span>ptrdiff_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>NULL</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_align_t.html" title="c/types/max align t"><span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="offsetof.html" title="c/types/offsetof"><span class="t-lines"><span>offsetof</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="limits.html" title="c/types/limits">数值极限</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="integer.html" title="c/types/integer">定宽整数类型</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
@@ -205,8 +206,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="kw1">if</span> <span class="br0">(</span>ptr <span class="sy1">==</span> NULL<span class="br0">)</span> <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Out of memory"</span><span class="br0">)</span><span class="sy4">;</span>
     <a href="../memory/free.html"><span class="kw405">free</span></a><span class="br0">(</span>ptr<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -215,15 +214,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1265/1000000
-Preprocessor generated node count: 6072/1000000
-Post‐expand include size: 24176/2097152 bytes
-Template argument size: 3935/2097152 bytes
+Preprocessor visited node count: 1277/1000000
+Preprocessor generated node count: 5995/1000000
+Post‐expand include size: 25147/2097152 bytes
+Template argument size: 4024/2097152 bytes
 Highest expansion depth: 15/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1391-0!*!0!!*!*!zh!* and timestamp 20210114062830 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1391-0!*!0!!*!*!zh!* and timestamp 20211022210209 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -240,6 +239,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/types/NULL">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2017年11月26日 (星期日) 23:26。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过4,176次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -254,7 +264,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.394 secs. -->
+</script><!-- Served in 0.288 secs. -->
 	</body>
-<!-- Cached 20210114062830 -->
+<!-- Cached 20211022210209 -->
 </html>

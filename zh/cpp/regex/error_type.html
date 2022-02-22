@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../regex.html" title="cpp/regex">regex</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header">标准库头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> 自立与有宿主实现</a> </td></tr>
@@ -117,7 +117,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic">原子操作库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread">线程支持库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../regex.html" title="cpp/regex">正则表达式库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../regex.html" title="cpp/regex">正则表达式库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv-h1"><td colspan="5"> 类</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_regex.html" title="cpp/regex/basic regex"><span class="t-lines"><span>basic_regex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sub_match.html" title="cpp/regex/sub match"><span class="t-lines"><span>sub_match</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
@@ -198,9 +198,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="mw-headline" id=".E5.B8.B8.E9.87.8F">常量</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-sep">
-<td colspan="2">  
-</td></tr>
 <tr class="t-dsc-hitem">
 <td>  常量
 </td>
@@ -214,11 +211,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表达式含有非法对照字符名
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_ctype</code>
 </td>
 <td>  表达式含有非法字符类名
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>error_escape</code>
@@ -226,11 +225,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表达式含有非法转义字符或尾随转义
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_backref</code>
 </td>
 <td>  表达式含有非法回溯引用
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>error_brack</code>
@@ -238,11 +239,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表达式含有不匹配的方括号对（ '[' 与 ']' ）
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_paren</code>
 </td>
 <td>  表达式含有不匹配的括号对（ '(' 与 ')' ）
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>error_brace</code>
@@ -250,11 +253,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表达式含有不匹配的花括号对（ '{' 与 '}' ）
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_badbrace</code>
 </td>
 <td>  表达式在 {} 表达式中含有非法范围
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>error_range</code>
@@ -262,11 +267,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  表达式含有非法字符范围（例如 [b-a] ）
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_space</code>
 </td>
 <td>  没有将表达式转换成有限状态机的足够内存
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>error_badrepeat</code>
@@ -274,17 +281,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  *?+{ 之一不后继一个合法正则表达式
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_complexity</code>
 </td>
 <td>  尝试的匹配的复杂度超过了预定义的等级
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>error_stack</code>
 </td>
 <td>  没有进行匹配的足够内存
 </td></tr>
+
 </table>
 <h3><span class="mw-headline" id=".E6.B3.A8.E6.84.8F">注意</span></h3>
 <p>C++11 中，这些常量曾被指定带有冗余的关键词 <code>static</code> ，它为 C++14 通过 <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg21/docs/lwg-defects.html#2053">LWG 问题 2053</a> 移除
@@ -300,15 +310,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2690/1000000
-Preprocessor generated node count: 8220/1000000
-Post‐expand include size: 68903/2097152 bytes
-Template argument size: 18113/2097152 bytes
+Preprocessor visited node count: 2559/1000000
+Preprocessor generated node count: 8097/1000000
+Post‐expand include size: 68086/2097152 bytes
+Template argument size: 18095/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:3506-0!*!0!!*!*!zh!* and timestamp 20210126155044 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:3506-0!*!0!!*!*!zh!* and timestamp 20211022155846 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -325,6 +335,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/cpp/regex/error_type">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2017年6月16日 (星期五) 09:38。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过3,317次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -339,7 +360,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.719 secs. -->
+</script><!-- Served in 0.709 secs. -->
 	</body>
-<!-- Cached 20210126155044 -->
+<!-- Cached 20211022155846 -->
 </html>

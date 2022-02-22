@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr" class="client-nojs">
 <head>
-<title>动态异常说明</title>
+<title>动态异常说明 (C++17 前)</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
 <link rel="shortcut icon" href="../../../common/favicon.ico">
@@ -13,7 +13,7 @@
 
 <script src="../../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/except_spec","wgTitle":"cpp/language/except spec","wgCurRevisionId":68031,"wgArticleId":2710,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"cpp/language/except_spec","wgUserVariant":"zh","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/except_spec","wgTitle":"cpp/language/except spec","wgCurRevisionId":73232,"wgArticleId":2710,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"cpp/language/except_spec","wgUserVariant":"zh","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"zh","language":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-MathJax":1,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -108,7 +108,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">动态异常说明</h1>
+<h1 id="firstHeading" class="firstHeading">动态异常说明 <span class="t-mark-rev t-until-cxx17">(C++17 前)</span></h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -119,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../language.html" title="cpp/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header">标准库头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> 自立与有宿主实现</a> </td></tr>
@@ -142,7 +142,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread">线程支持库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental">技术规范</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ 语言</a></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">异常</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
+<div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="throw.html" title="cpp/language/throw">throw 表达式</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="function-try-block.html" title="cpp/language/function-try-block">函数 try 块</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="try_catch.html" title="cpp/language/try catch">try/catch 块</a></td></tr>
@@ -160,24 +160,11 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <code><b>throw(</b></code> <code><b>)</b></code>
+<td> <code><b>throw(</b></code><span class="t-spar">类型标识列表</span><span class="t-mark">(可选)</span><code><b>)</b></code>
 </td>
 <td> (1)
 </td>
-<td> <span class="t-mark-rev t-deprecated-cxx11">(C++11 中弃用)</span><span class="t-mark-rev t-until-cxx20">(C++20 中移除)</span>
-</td></tr>
-
-
-
-<tr>
-<td colspan="10" class="t-sdsc-sep">
-</td></tr>
-<tr class="t-sdsc">
-<td> <code><b>throw(</b></code><span class="t-spar">类型标识, 类型标识, ...</span><code><b>)</b></code>
-</td>
-<td> (2)
-</td>
-<td> <span class="t-mark-rev t-deprecated-cxx11">(C++11 中弃用)</span><span class="t-mark-rev t-until-cxx17">(C++17 中移除)</span>
+<td> <span class="t-mark-rev t-deprecated-cxx11">(C++11 中弃用)</span><br><span class="t-mark-rev t-until-cxx17">(C++17 中移除)</span>
 </td></tr>
 
 
@@ -185,77 +172,98 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></table>
- <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx17"><td>
-<div class="t-li1"><span class="t-li">1)</span> 不抛出动态异常说明
-</div></td>
-<td><span class="t-mark-rev t-until-cxx17">(C++17 前)</span></td></tr>
-<tr class="t-rev t-since-cxx17"><td>
-<div class="t-li1"><span class="t-li">1)</span> 与 <a href="noexcept_spec.html" title="cpp/language/noexcept spec"><tt>noexcept(true)</tt></a> 相同
-</div></td>
-<td><span class="t-mark-rev t-since-cxx17">(C++17 起)</span></td></tr>
-</table>
-<div class="t-li1"><span class="t-li">2)</span> 显式动态异常说明</div>
-<p>这种说明仅可出现在作为类型为函数类型、函数指针类型、函数引用类型、成员函数指针类型的函数、变量、非静态数据成员的声明符的，<span class="t-rev-inl t-until-cxx17"><span>顶层</span> <span><span class="t-mark-rev t-until-cxx17">(C++17 前)</span></span></span> lambda 声明符或函数声明符上。它可以出现在形参的声明符或返回类型的声明符上。
+<div class="t-li1"><span class="t-li">1)</span> 显式动态异常说明</div>
+<table class="t-par-begin">
+
+
+<tr class="t-par">
+<td>  <span class="t-spar">类型标识列表</span>
+</td>
+<td> -
+</td>
+<td>  逗号分隔的<a href="incomplete_type.html#.E7.B1.BB.E5.9E.8B.E7.9A.84.E5.91.BD.E5.90.8D" title="cpp/language/type">类型标识</a>列表<span class="t-rev-inl t-since-cxx11"><span>，后附省略号（...）的类型标识表示<a href="parameter_pack.html#.E5.8C.85.E5.B1.95.E5.BC.80" title="cpp/language/parameter pack">包展开</a></span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>
+</td></tr></table>
+<p>这种说明只能在作为类型为函数类型、函数指针类型、函数引用类型、成员函数指针类型的函数、变量、非静态数据成员的声明符的，顶层函数声明符上和形参的声明符或返回类型的声明符上出现。
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK：函数声明</span>
-<span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>pf<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK：函数指针声明</span>
-<span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">void</span> pfa<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK：函数指针形参声明</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>            <span class="co1">// OK：函数声明</span>
+<span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>pf<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// OK：函数指针声明</span>
+<span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">void</span> pfa<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// OK：函数指针形参声明</span>
 <span class="kw1">typedef</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>pf<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 错误：typedef 声明</span></pre></div></div>
 <h3><span class="mw-headline" id=".E8.A7.A3.E9.87.8A">解释</span></h3>
-<p>若某个函数的声明将类型 <code>T</code> 列于其异常说明，则该函数可以抛出该类型或从该类型派生的类型的异常。
-</p><p>异常说明中不允许出现<a href="incomplete_type.html#.E4.B8.8D.E5.AE.8C.E6.95.B4.E7.B1.BB.E5.9E.8B" title="cpp/language/type">不完整类型</a>，除 cv <code>void*</code> 之外的到不完整类型的指针或引用，以及右值引用类型。若使用数组和函数类型，则它们被调整到对应的指针类型。<span class="t-rev-inl t-since-cxx11"><span>允许<a href="parameter_pack.html" title="cpp/language/parameter pack">形参包</a>。</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>
-</p><p>若函数抛出了未列于其异常说明的类型的异常，则调用函数 <span class="t-lc"><a href="../error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span>。缺省的函数调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>，但它可以（通过 <span class="t-lc"><a href="../error/set_unexpected.html" title="cpp/error/set unexpected">std::set_unexpected</a></span>）替换为用户提供的函数，可能调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> 或抛出异常。若从 <span class="t-lc"><a href="../error/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> 抛出的异常为异常说明所接受，则栈回溯照常持续。若它不被接受，但异常说明允许 <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span>，则抛出 <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span>。否则，调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>。
+<p>如果某个函数的声明将类型 <code>T</code> 列于其动态异常说明，那么该函数可以抛出该类型或从该类型派生的类型的异常。没有类型标识列表的动态异常说明（即 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span></span></span>）是不抛出的。带有不抛出动态异常说明的函数不允许任何异常。
+</p><p>异常说明中不能出现<a href="incomplete_type.html#.E4.B8.8D.E5.AE.8C.E6.95.B4.E7.B1.BB.E5.9E.8B" title="cpp/language/type">不完整类型</a>，除 cv <code>void*</code> 之外的到不完整类型的指针或引用，以及右值引用类型。如果使用数组和函数类型，那么它们会被调整到对应的指针类型。<span class="t-rev-inl t-since-cxx11"><span>允许<a href="parameter_pack.html" title="cpp/language/parameter pack">形参包</a>。</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>
+</p><p>动态异常说明不会被认为是函数类型的一部分。
+</p><p>如果函数抛出了没有列于其异常说明的类型的异常，那么调用函数 <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span>。默认的该函数会调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>，但它可以（通过 <span class="t-lc"><a href="../error/exception/set_unexpected.html" title="cpp/error/set unexpected">std::set_unexpected</a></span>）被替换成可能调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span> 或抛出异常的用户提供的函数。如果异常说明接受从 <span class="t-lc"><a href="../error/exception/unexpected.html" title="cpp/error/unexpected">std::unexpected</a></span> 抛出的异常，那么栈回溯照常持续。如果它不被接受，但异常说明允许 <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span>，那么抛出 <span class="t-lc"><a href="../error/bad_exception.html" title="cpp/error/bad exception">std::bad_exception</a></span>。否则，调用 <span class="t-lc"><a href="../error/terminate.html" title="cpp/error/terminate">std::terminate</a></span>。
 </p>
 <h3><span class="mw-headline" id=".E6.BD.9C.E5.9C.A8.E5.BC.82.E5.B8.B8">潜在异常</span></h3>
 <p>每个函数 <code>f</code>，函数指针 <code>pf</code>，与成员函数指针 <code>pmf</code> 都拥有一个“潜在异常集合”，它由可能抛出的类型构成。所有类型的集合指示可能抛出任何异常。此集合定义如下：
 </p>
-<ol>
-<li> 若 <code>f</code>、<code>pf</code> 或 <code>pmf</code> 的声明使用<span class="t-rev-inl t-until-cxx11"><span>并非允许所有异常的</span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span>动态异常说明，则则集合由列于该规定的所有类型组成。
-</li><li class="t-rev-inl t-rev-inl-noborder t-since-cxx11"><span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span> 否则，若 <code>f</code>、 <code>pf</code> 或 <code>pmf</code> 的声明使用 <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept(true)</code></a>，则集合为空。</span>
-</li><li> 否则，集合是所有类型的集合。
-</li></ol>
+<div class="t-li1"><span class="t-li">1)</span> 如果 <code>f</code>、<code>pf</code> 或 <code>pmf</code> 的声明使用<span class="t-rev-inl t-until-cxx11"><span>并非允许所有异常的</span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span>动态异常说明，那么集合由列于该规定的所有类型组成。</div>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<div class="t-li1"><span class="t-li">2)</span> 否则，如果 <code>f</code>、 <code>pf</code> 或 <code>pmf</code> 的声明有使用 <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept(true)</code></a>，那么集合为空。
+</div></td>
+<td><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></td></tr>
+</table>
+<div class="t-li1"><span class="t-li">3)</span> 否则，集合是所有类型的集合。</div>
 <p>注意：对于隐式声明的特殊成员函数（构造函数、赋值运算符和析构函数）<span class="t-rev-inl t-since-cxx11"><span>，以及对于继承的构造函数</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>，潜在异常的集合是它们会调用的所有函数的潜在异常集合的并集：非变体非静态数据成员、直接基类及适当场合的虚基类的构造函数/赋值运算符/析构函数（还包括默认实参表达式）
-</p><p>每个表达式 <code>e</code> 都拥有一个<i>潜在异常集合</i>。若 <code>e</code> 为<a href="constant_expression.html" title="cpp/language/constant expression">核心常量表达式</a>则集合为空，否则集合是 <code>e</code> 的全部直接子表达式（包含<a href="default_arguments.html" title="cpp/language/default arguments">默认实参表达式</a>）的潜在异常集合的并集，再与下列取决于 <code>e</code> 的形式的另一个集合合并：
+</p><p>每个表达式 <code>e</code> 都拥有一个<i>潜在异常集合</i>。如果 <code>e</code> 是<a href="constant_expression.html" title="cpp/language/constant expression">核心常量表达式</a>，那么集合为空，否则集合是 <code>e</code> 的全部直接子表达式（包含<a href="default_arguments.html" title="cpp/language/default arguments">默认实参表达式</a>）的潜在异常集合的并集，再与下列取决于 <code>e</code> 的形式的另一个集合合并：
 </p>
-<ol>
-<li> 若 <code>e</code> 是一个函数调用表达式，令 <code>g</code> 代表被调用的函数、函数指针或成员函数指针，则
-<ul>
-<li> 若 <code>g</code> 的声明使用动态异常说明，则添加 <code>g</code> 的潜在异常集合到集合；
-</li><li class="t-rev-inl t-rev-inl-noborder t-since-cxx11"><span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span> 若 <code>g</code> 的声明使用 <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept(true)</code></a> ，则集合为空；</span>
-</li><li> 否则，该集合是所有类型的集合。
+<div class="t-li1"><span class="t-li">1)</span> 如果 <code>e</code> 是一个函数调用表达式，令 <code>g</code> 代表被调用的函数、函数指针或成员函数指针，那么：
+<dl><dd><ul><li> 如果 <code>g</code> 的声明使用了动态异常说明，那么添加 <code>g</code> 的潜在异常集合到集合；
 </li></ul>
-</li><li> 若 <code>e</code> 隐式调用某个函数（它是运算符表达式且该运算符被重载，是 <a href="new.html" title="cpp/language/new">new 表达式</a>且其分配函数被重载，或是完整表达式且调用了临时量的析构函数），则该集合是这个函数的集合。
-</li><li> 若 <code>e</code> 是一个 <a href="throw.html" title="cpp/language/throw">throw 表达式</a>，则该集合是以其操作数所初始化的异常，或对于重抛出表达式（无操作数者）是所有异常的集合。
-</li><li> 若 <code>e</code> 是对多态类型引用的 <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a>，则该集合由 <span class="t-lc"><a href="../types/bad_cast.html" title="cpp/types/bad cast">std::bad_cast</a></span> 组成。
-</li><li> 若 <code>e</code> 是应用到多解引用指向多态类型指针的 <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a>，则该集合由 <span class="t-lc"><a href="../types/bad_typeid.html" title="cpp/types/bad typeid">std::bad_typeid</a></span> 组成。
-</li><li class="t-rev-inl t-rev-inl-noborder t-since-cxx11"><span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span> 若 <code>e</code> 是一个拥有非常量数组大小的 <a href="new.html" title="cpp/language/new">new 表达式</a>，且选择的分配函数拥有非空的潜在异常集合，则集合由 <span class="t-lc"><a href="../memory/new/bad_array_new_length.html" title="cpp/memory/new/bad array new length">std::bad_array_new_length</a></span> 组成。</span>
-</li></ol>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// f() 的集合是“int”</span>
-<span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>             <span class="co1">// g() 的集合是所有类型的集合</span>
-<span class="kw1">struct</span> A <span class="br0">{</span> A<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>    <span class="co1">// “new A”的集合是所有类型的集合</span>
-<span class="kw1">struct</span> B <span class="br0">{</span> B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// “B()”的集合为空</span>
+</dd></dl>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<dl><dd><ul><li> 如果 <code>g</code> 的声明使用了 <a href="noexcept.html" title="cpp/language/noexcept"><code>noexcept(true)</code></a>，那么集合为空；
+</li></ul>
+</dd></dl>
+</td>
+<td><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></td></tr>
+</table>
+<dl><dd><ul><li> 否则，该集合是所有类型的集合。</li></ul></dd></dl></div>
+
+
+<div class="t-li1"><span class="t-li">2)</span> 如果 <code>e</code> 隐式调用了某个函数（它是运算符表达式且该运算符被重载，是 <a href="new.html" title="cpp/language/new">new 表达式</a>且其分配函数被重载，或是完整表达式且调用了临时量的析构函数），那么该集合是这个函数的集合。</div>
+<div class="t-li1"><span class="t-li">3)</span> 如果 <code>e</code> 是一个 <a href="throw.html" title="cpp/language/throw">throw 表达式</a>，那么该集合是以其操作数所初始化的异常，或对于重抛出表达式（无操作数者）是所有异常的集合。</div>
+<div class="t-li1"><span class="t-li">4)</span> 如果 <code>e</code> 是对多态类型引用的 <a href="dynamic_cast.html" title="cpp/language/dynamic cast"><code>dynamic_cast</code></a>，那么该集合由 <span class="t-lc"><a href="../types/bad_cast.html" title="cpp/types/bad cast">std::bad_cast</a></span> 组成。</div>
+<div class="t-li1"><span class="t-li">5)</span> 如果 <code>e</code> 是应用到多解引用指向多态类型指针的 <a href="typeid.html" title="cpp/language/typeid"><code>typeid</code></a>，那么该集合由 <span class="t-lc"><a href="../types/bad_typeid.html" title="cpp/types/bad typeid">std::bad_typeid</a></span> 组成。</div>
+ <table class="t-rev-begin">
+<tr class="t-rev t-since-cxx11"><td>
+<div class="t-li1"><span class="t-li">6)</span> 如果 <code>e</code> 是一个拥有非常量数组大小的 <a href="new.html" title="cpp/language/new">new 表达式</a>，且选择的分配函数拥有非空的潜在异常集合，那么该集合由 <span class="t-lc"><a href="../memory/new/bad_array_new_length.html" title="cpp/memory/new/bad array new length">std::bad_array_new_length</a></span> 组成。
+</div></td>
+<td><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></td></tr>
+</table>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// f() 的集合是“int”</span>
+<span class="kw4">void</span> g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>            <span class="co1">// g() 的集合是所有类型的集合</span>
+<span class="kw1">struct</span> A <span class="br0">{</span> A<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>                  <span class="co1">// “new A”的集合是所有类型的集合</span>
+<span class="kw1">struct</span> B <span class="br0">{</span> B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>         <span class="co1">// “B()”的集合为空</span>
 <span class="kw1">struct</span> D<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> D<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// “new D”的集合是所有类型的集合</span></pre></div></div>
-<p>所有隐式声明的成员函数<span class="t-rev-inl t-since-cxx11"><span>及继承的构造函数</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>都拥有异常说明，选择如下：
+<p>所有隐式声明的成员函数<span class="t-rev-inl t-since-cxx11"><span>和继承的构造函数</span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>都拥有异常说明，选择如下：
 </p>
-<ul><li> 若潜在异常为类型全集，则隐式异常说明<span class="t-rev-inl t-until-cxx11"><span>允许所有异常（该异常说明被认为存在，即使它不可用代码表达，且表现如同无异常说明）</span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>。
-</li><li> 否则，若潜在异常的集合非空，则隐式异常说明列出每个来自该集合的类型
-</li><li> 否则，隐式异常说明为 <span class="t-rev-inl t-until-cxx11"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>。
+<ul><li> 如果潜在异常的集合是类型全集，那么隐式异常说明<span class="t-rev-inl t-until-cxx11"><span>允许所有异常（该异常说明被认为存在，即使它不可用代码表达，且表现如同无异常说明）</span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span><span class="t-rev-inl t-since-cxx11"><span>是 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>。
+</li><li> 否则，如果潜在异常的集合非空，那么隐式异常说明列出每个来自该集合的类型
+</li><li> 否则，隐式异常说明是 <span class="t-rev-inl t-until-cxx11"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-until-cxx11">(C++11 前)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span><span class="br0">(</span><span class="kw2">true</span><span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-cxx11">(C++11 起)</span></span></span>。
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A <span class="br0">{</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">struct</span> A
+<span class="br0">{</span>
     A<span class="br0">(</span><span class="kw4">int</span> <span class="sy1">=</span> <span class="br0">(</span>A<span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span>, <span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
     A<span class="br0">(</span><span class="kw4">const</span> A<span class="sy3">&amp;</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     A<span class="br0">(</span>A<span class="sy3">&amp;&amp;</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     ~A<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span>X<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> B <span class="br0">{</span>
+ 
+<span class="kw1">struct</span> B
+<span class="br0">{</span>
     B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     B<span class="br0">(</span><span class="kw4">const</span> B<span class="sy3">&amp;</span><span class="br0">)</span> <span class="sy1">=</span> <span class="kw1">default</span><span class="sy4">;</span> <span class="co1">// 异常说明是“noexcept(true)”</span>
     B<span class="br0">(</span>B<span class="sy3">&amp;&amp;</span>, <span class="kw4">int</span> <span class="sy1">=</span> <span class="br0">(</span><span class="kw1">throw</span> Y<span class="br0">(</span><span class="br0">)</span>, <span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span> <span class="kw1">noexcept</span><span class="sy4">;</span>
     ~B<span class="br0">(</span><span class="br0">)</span> <span class="kw1">throw</span><span class="br0">(</span>Y<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
+ 
 <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span>
-<span class="kw1">struct</span> D <span class="sy4">:</span> <span class="kw1">public</span> A, <span class="kw1">public</span> B <span class="br0">{</span>
+<span class="kw1">struct</span> D <span class="sy4">:</span> <span class="kw1">public</span> A, <span class="kw1">public</span> B
+<span class="br0">{</span>
     <span class="kw4">int</span> <span class="sy2">*</span> p <span class="sy1">=</span> new <span class="br0">(</span><a href="../memory/new/nothrow.html"><span class="kw699">std::<span class="me2">nothrow</span></span></a><span class="br0">)</span> <span class="kw4">int</span><span class="br0">[</span>n<span class="br0">]</span><span class="sy4">;</span>
     <span class="co1">// D 拥有下列隐式声明的成员：</span>
     <span class="co1">// D::D() throw(X, std::bad_array_new_length);</span>
@@ -269,6 +277,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="co2">#include &lt;exception&gt;</span>
 <span class="co2">#include &lt;cstdlib&gt;</span>
  
+static_assert<span class="br0">(</span>__cplusplus <span class="sy1">&lt;</span> <span class="nu0">201700</span>, <span class="st0">"ISO C++17 不允许动态异常说明。"</span><span class="br0">)</span><span class="sy4">;</span>
+ 
 <span class="kw1">class</span> X <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">class</span> Y <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">class</span> Z <span class="sy4">:</span> <span class="kw1">public</span> X <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
@@ -278,20 +288,22 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="kw1">throw</span> X<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-    <span class="kw1">if</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="kw1">throw</span> Z<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 亦 OK</span>
+    <span class="kw1">if</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="kw1">throw</span> Z<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
     <span class="kw1">throw</span> W<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 将调用 std::unexpected()</span>
 <span class="br0">}</span>
  
-<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
-  <a href="../error/set_unexpected.html"><span class="kw791">std::<span class="me2">set_unexpected</span></span></a><span class="br0">(</span><span class="br0">[</span><span class="br0">]</span><span class="br0">{</span>
-      <a href="../io/cout.html"><span class="kw1758">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"That was unexpected"</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/endl.html"><span class="kw1791">std::<span class="me2">endl</span></span></a><span class="sy4">;</span> <span class="co1">// 需要冲洗</span>
-      <a href="../utility/program/abort.html"><span class="kw966">std::<span class="me2">abort</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
-  f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../error/set_unexpected.html"><span class="kw791">std::<span class="me2">set_unexpected</span></span></a><span class="br0">(</span><span class="br0">[</span><span class="br0">]</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1758">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"预料外的异常！"</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/endl.html"><span class="kw1791">std::<span class="me2">endl</span></span></a><span class="sy4">;</span> <span class="co1">// 需要清除缓冲区</span>
+        <a href="../utility/program/abort.html"><span class="kw966">std::<span class="me2">abort</span></span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span>
+    f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>输出：
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">That was unexpected</pre></div></div> 
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">预料外的异常！</pre></div></div> 
 </div>
 <h3><span class="mw-headline" id=".E7.BC.BA.E9.99.B7.E6.8A.A5.E5.91.8A">缺陷报告</span></h3>
 <p>下列更改行为的缺陷报告追溯地应用于以前出版的 C++ 标准。
@@ -307,22 +319,31 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <th> 正确行为
 </th></tr>
 <tr>
+<td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue25">CWG 25</a>
+</td>
+<td> C++98
+</td>
+<td> 在拥有不同异常说明的指向成员的指针间赋值或初始化的行为未指明
+</td>
+<td> 应用与函数指针和函数引用相同的限制
+</td></tr>
+<tr>
 <td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue1351">CWG 1351</a>
 </td>
 <td> C++98<br>C++11
 </td>
-<td> 默认实参（C++98）与默认成员初始化器（C++11）在隐式异常说明中未受到考虑
+<td> 不考虑隐式异常说明中的默认实参（C++98）与默认成员初始化器（C++11）
 </td>
-<td> 使之受到考虑
+<td> 考虑它们
 </td></tr>
 <tr>
 <td> <a rel="nofollow" class="external text" href="https://wg21.cmeerw.net/cwg/issue2191">CWG 2191</a>
 </td>
 <td> C++98
 </td>
-<td> <code>typeid</code> 表达式的潜在异常集合可以含有 <code>bad_typeid</code> ，即使不能抛出它
+<td> <code>typeid</code> 表达式的潜在异常集合可以包含 <code>bad_typeid</code> ，即使不能抛出它
 </td>
-<td> 仅若能抛出 <code>bad_typeid</code> 才含有它
+<td> 只有在能抛出时包含它
 </td></tr></table>
 <h3><span class="mw-headline" id=".E5.8F.82.E9.98.85">参阅</span></h3>
 <table class="t-dsc-begin">
@@ -330,24 +351,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-dsc">
 <td>  <a href="noexcept_spec.html" title="cpp/language/noexcept spec"> <code>noexcept</code> 说明符</a><span class="t-mark-rev t-since-cxx11">(C++11)</span>
 </td>
-<td>  要求函数不抛出任何异常</td></tr>
+<td>  指定函数是否抛出异常</td></tr>
 </table>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2004/1000000
-Preprocessor generated node count: 7165/1000000
-Post‐expand include size: 37709/2097152 bytes
-Template argument size: 8304/2097152 bytes
-Highest expansion depth: 15/40
+Preprocessor visited node count: 2018/1000000
+Preprocessor generated node count: 6383/1000000
+Post‐expand include size: 38958/2097152 bytes
+Template argument size: 9725/2097152 bytes
+Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:2710-0!*!0!!zh!*!zh!* and timestamp 20210109103151 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:2710-0!*!0!!zh!*!zh!* and timestamp 20211217020118 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=68031">https://zh.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=68031</a>”                    </div>
+                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=73232">https://zh.cppreference.com/mwiki/index.php?title=cpp/language/except_spec&amp;oldid=73232</a>”                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -360,6 +381,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/cpp/language/except_spec">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2021年12月16日 (星期四) 17:48。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过12,905次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -374,7 +406,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.951 secs. -->
+</script><!-- Served in 0.878 secs. -->
 	</body>
-<!-- Cached 20210109103151 -->
+<!-- Cached 20211217020118 -->
 </html>

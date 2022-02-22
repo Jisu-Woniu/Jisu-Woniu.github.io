@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../atomic.html" title="c/atomic">atomic</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types">类型支持</a> </td></tr>
@@ -112,7 +112,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../atomic.html" title="c/atomic">原子操作库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../atomic.html" title="c/atomic">原子操作库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv-h2"><td colspan="5"> 类型</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>memory_order</span></span></strong></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="atomic_flag.html" title="c/atomic/atomic flag"><span class="t-lines"><span>atomic_flag</span></span></a></div></div></td></tr>
@@ -170,9 +170,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="2"> <div>定义于头文件 <code>&lt;stdatomic.h&gt;</code> </div>
 </td></tr>
 
-<tr class="t-dsc-sep">
-<td colspan="2">  
-</td></tr>
 <tr class="t-dsc-hitem">
 <td>  值
 </td>
@@ -186,11 +183,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  宽松操作：没有同步或顺序制约，仅对此操作要求原子性（见下方<a href="memory_order.html#.E5.AE.BD.E6.9D.BE.E9.A1.BA.E5.BA.8F">宽松顺序</a>）。
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>memory_order_consume</code>
 </td>
 <td>  有此内存顺序的加载操作，在其影响的内存位置进行<i>消费操作</i>：当前线程中依赖于当前加载的该值的读或写不能被重排到此加载前。其他释放同一原子变量的线程的对数据依赖变量的写入，为当前线程所可见。在大多数平台上，这只影响到编译器优化（见下方<a href="memory_order.html#.E9.87.8A.E6.94.BE.E6.B6.88.E8.B4.B9.E9.A1.BA.E5.BA.8F">释放消费顺序</a>）。
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>memory_order_acquire</code>
@@ -198,11 +197,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  有此内存顺序的加载操作，在其影响的内存位置进行<i>获得操作</i>：当前线程中读或写不能被重排到此加载前。其他释放同一原子变量的线程的所有写入，能为当前线程所见（见下方<a href="memory_order.html#.E9.87.8A.E6.94.BE.E8.8E.B7.E5.BE.97.E9.A1.BA.E5.BA.8F">释放获得顺序</a>）。
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>memory_order_release</code>
 </td>
 <td>  有此内存顺序的存储操作进行<i>释放操作</i>：当前线程中的读或写不能被重排到此存储后。当前线程的所有写入，可见于获得该同一原子变量的其他线程（见下方<a href="memory_order.html#.E9.87.8A.E6.94.BE.E8.8E.B7.E5.BE.97.E9.A1.BA.E5.BA.8F">释放获得顺序</a>），并且对该原子变量的带依赖写入变得对于其他消费同一原子对象的线程可见（见下方<a href="memory_order.html#.E9.87.8A.E6.94.BE.E6.B6.88.E8.B4.B9.E9.A1.BA.E5.BA.8F">释放消费顺序</a>）。
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>memory_order_acq_rel</code>
@@ -210,11 +211,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  带此内存顺序的读修改写操作既是<i>获得操作</i>又是<i>释放操作</i>。当前线程的读或写内存不能被重排到此存储前或后。所有释放同一原子变量的线程的写入可见于修改之前，而且修改可见于其他获得同一原子变量的线程。
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>memory_order_seq_cst</code>
 </td>
 <td>  有此内存顺序的加载操作进行<i>获得操作</i>，存储操作进行<i>释放操作</i>，而读修改写操作进行<i>获得操作</i>和<i>释放操作</i>，再加上存在一个单独全序，其中所有线程以同一顺序观测到所有修改（见下方<a href="memory_order.html#.E5.BA.8F.E5.88.97.E4.B8.80.E8.87.B4.E9.A1.BA.E5.BA.8F">序列一致顺序</a>）。
 </td></tr>
+
 </table>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">本节未完成<br>原因：先发生于和其他概念同 C++ ，但保持修改顺序和<a href="../language/atomic.html" title="c/language/atomic">c/language/atomic</a>中的四种一致 </td></tr></table>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">本节未完成<br>原因：在做上面的时候，不要忘记在 C11 出版时先发生于不是不成环的，这经由 DR 401 被更新到匹配C++11 </td></tr></table>
@@ -289,7 +292,7 @@ r2 <span class="sy1">=</span> <a href="atomic_load.html"><span class="kw933">ato
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">本节未完成<br>原因：暂无示例 </td></tr></table>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-11">
-<ul><li> C11 standard (ISO/IEC 9899:2011): 
+<ul><li> C11 标准（ISO/IEC 9899:2011）：
 </li></ul>
 <dl><dd><ul><li> 7.17.1/4 memory_order (p: 273)
 </li></ul>
@@ -313,15 +316,15 @@ r2 <span class="sy1">=</span> <a href="atomic_load.html"><span class="kw933">ato
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3572/1000000
-Preprocessor generated node count: 10762/1000000
-Post‐expand include size: 76609/2097152 bytes
-Template argument size: 13763/2097152 bytes
+Preprocessor visited node count: 3504/1000000
+Preprocessor generated node count: 10639/1000000
+Post‐expand include size: 76170/2097152 bytes
+Template argument size: 13745/2097152 bytes
 Highest expansion depth: 19/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:939-0!*!0!!zh!*!zh!* and timestamp 20210126100143 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:939-0!*!0!!zh!*!zh!* and timestamp 20211207195502 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -338,6 +341,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/atomic/memory_order">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2017年11月26日 (星期日) 06:21。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过7,192次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -352,7 +366,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.712 secs. -->
+</script><!-- Served in 0.788 secs. -->
 	</body>
-<!-- Cached 20210126100143 -->
+<!-- Cached 20211207195502 -->
 </html>

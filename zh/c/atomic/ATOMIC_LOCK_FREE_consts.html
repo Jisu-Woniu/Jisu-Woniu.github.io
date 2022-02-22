@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../atomic.html" title="c/atomic">atomic</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types">类型支持</a> </td></tr>
@@ -112,7 +112,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../atomic.html" title="c/atomic">原子操作库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../atomic.html" title="c/atomic">原子操作库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv-h2"><td colspan="5"> 类型</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="memory_order.html" title="c/atomic/memory order"><span class="t-lines"><span>memory_order</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="atomic_flag.html" title="c/atomic/atomic flag"><span class="t-lines"><span>atomic_flag</span></span></a></div></div></td></tr>
@@ -166,9 +166,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-sep">
-<td colspan="2">  
-</td></tr>
 <tr class="t-dsc-hitem">
 <td>  值
 </td>
@@ -182,21 +179,24 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  该原子类型决不免锁
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>1</code>
 </td>
 <td>  该原子类型有时免锁
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>2</code>
 </td>
 <td>  该原子类型始终免锁
 </td></tr>
+
 </table>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-11">
-<ul><li> C11 standard (ISO/IEC 9899:2011): 
+<ul><li> C11 标准（ISO/IEC 9899:2011）：
 </li></ul>
 <dl><dd><ul><li> 7.17.1/3 atomic lock-free macros (p: 273)
 </li></ul>
@@ -205,15 +205,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 1958/1000000
-Preprocessor generated node count: 5742/1000000
-Post‐expand include size: 46280/2097152 bytes
-Template argument size: 8458/2097152 bytes
+Preprocessor visited node count: 1926/1000000
+Preprocessor generated node count: 5619/1000000
+Post‐expand include size: 45962/2097152 bytes
+Template argument size: 8440/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:920-0!*!0!*!*!*!zh!* and timestamp 20210118204443 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:920-0!*!0!*!*!*!zh!* and timestamp 20211207195502 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -230,6 +230,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/atomic/ATOMIC_LOCK_FREE_consts">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2017年11月30日 (星期四) 04:27。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过3,964次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -244,7 +255,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.245 secs. -->
+</script><!-- Served in 0.325 secs. -->
 	</body>
-<!-- Cached 20210118204443 -->
+<!-- Cached 20211207195502 -->
 </html>

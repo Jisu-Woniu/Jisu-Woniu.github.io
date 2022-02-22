@@ -119,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../locale.html" title="c/locale">locale</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types">类型支持</a> </td></tr>
@@ -136,7 +136,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="c/locale">本地化支持</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../locale.html" title="c/locale">本地化支持</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="setlocale.html" title="c/locale/setlocale"><span class="t-lines"><span>setlocale</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="localeconv.html" title="c/locale/localeconv"><span class="t-lines"><span>localeconv</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lconv.html" title="c/locale/lconv"><span class="t-lines"><span>lconv</span></span></a></div></div></td></tr>
@@ -186,9 +186,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-sep">
-<td colspan="2">  
-</td></tr>
 <tr class="t-dsc-hitem">
 <td> 常量
 </td>
@@ -202,11 +199,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择整个 C 本地环境
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_COLLATE</code>
 </td>
 <td> 选择 C 本地环境中的对照类别
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>LC_CTYPE</code>
@@ -214,11 +213,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的字符分类类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_MONETARY</code>
 </td>
 <td> 选择 C 本地环境中的货币格式化类别
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>LC_NUMERIC</code>
@@ -226,11 +227,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的数值格式化类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_TIME</code>
 </td>
 <td> 选择 C 本地环境中的时间格式化类别
 </td></tr>
+
 </table>
 <p><code>&lt;locale.h&gt;</code> 中可以定义附加宏常量，名称以 <code>LC_</code> 后随至少一个大写字母开始。例如， POSIX 规范要求 LC_MESSAGES （此外还控制 <span class="t-lc"><a href="../io/perror.html" title="c/io/perror">perror</a></span> 和 <span class="t-lc"><a href="../string/byte/strerror.html" title="c/string/byte/strerror">strerror</a></span> ）， ISO/IEC 30112:2014 （ <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC35/WG5/docs/30112d10.pdf">2014 方案</a>）额外定义 LC_IDENTIFICATION 、 LC_XLITERATE 、 LC_NAME 、 LC_ADDRESS 、 LC_TELEPHONE 、 LC_PAPER 、 LC_MEASUREMENT 和 LC_KEYBOARD ，它们均为 GNU C 库所支持（除了 LC_XLITERATE ）。
 </p>
@@ -240,9 +243,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-sep">
-<td colspan="2">  
-</td></tr>
 <tr class="t-dsc-hitem">
 <td> glibc 本地环境类别常量
 </td>
@@ -256,11 +256,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的邮政地址格式类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_IDENTIFICATION</code>
 </td>
 <td> 选择 C 本地环境中的类别版本与状态
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>LC_KEYBOARD</code>
@@ -268,11 +270,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的键盘鉴别类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_MEASUREMENT</code>
 </td>
 <td> 选择 C 本地环境中的度量系统信息类别
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>LC_NAME</code>
@@ -280,11 +284,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的人名书写格式类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LC_PAPER</code>
 </td>
 <td> 选择 C 本地环境中的纸张格式类别
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <code>LC_TELEPHONE</code>
@@ -292,11 +298,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 选择 C 本地环境中的电话号码格式（和其他电话信息）类别
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <code>LANG</code>
 </td>
 <td> 选择尚未指定的类别
 </td></tr>
+
 </table>
 <p>其中 <code>LC_ALL</code> 的优先级高于所有特定类别，而每个特定类别都优先于 <code>LANG</code> 。具体而言：
 </p>
@@ -343,19 +351,19 @@ Date: 月曜日 2011年12月19日 18時04分40秒</pre></div></div>
 </div>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-11">
-<ul><li> C11 standard (ISO/IEC 9899:2011): 
+<ul><li> C11 标准（ISO/IEC 9899:2011）：
 </li></ul>
 <dl><dd><ul><li> 7.11/3 Localization &lt;locale.h&gt; (p: 224)
 </li></ul>
 </dd></dl>
 <div class="t-ref-std-c99">
-<ul><li> C99 standard (ISO/IEC 9899:1999): 
+<ul><li> C99 标准（ISO/IEC 9899:1999）：
 </li></ul>
 <dl><dd><ul><li> 7.11/3 Localization &lt;locale.h&gt; (p: 205)
 </li></ul>
 </dd></dl>
 <div class="t-ref-std-c89">
-<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+<ul><li> C89/C90 标准（ISO/IEC 9899:1990）： 
 </li></ul>
 <dl><dd><ul><li> 4.4 LOCALIZATION &lt;locale.h&gt; 
 </li></ul>
@@ -374,15 +382,15 @@ Date: 月曜日 2011年12月19日 18時04分40秒</pre></div></div>
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2629/1000000
-Preprocessor generated node count: 7278/1000000
-Post‐expand include size: 34818/2097152 bytes
-Template argument size: 7999/2097152 bytes
+Preprocessor visited node count: 2485/1000000
+Preprocessor generated node count: 7155/1000000
+Post‐expand include size: 33637/2097152 bytes
+Template argument size: 7981/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1083-0!*!0!!zh!*!zh!* and timestamp 20210113144356 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1083-0!*!0!!zh!*!zh!* and timestamp 20211207195458 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -399,6 +407,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/locale/LC_categories">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2018年1月21日 (星期日) 10:17。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过6,159次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -413,7 +432,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.761 secs. -->
+</script><!-- Served in 0.680 secs. -->
 	</body>
-<!-- Cached 20210113144356 -->
+<!-- Cached 20211207195458 -->
 </html>

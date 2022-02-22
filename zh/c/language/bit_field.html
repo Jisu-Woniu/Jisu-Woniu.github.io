@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../language.html" title="c/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../types.html" title="c/types">类型支持</a> </td></tr>
@@ -112,7 +112,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language">C 语言</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="c/language">C 语言</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv-h2"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">基本概念</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../keyword.html" title="c/keyword">关键词</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor">预处理器</a></td></tr>
@@ -125,7 +125,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv-h2"><td colspan="5"> <a href="history.html" title="c/language/history">C 的历史</a></td></tr>
 <tr class="t-nv-h2"><td colspan="5"> <a href="../experimental.html" title="c/experimental">技术规范</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="declarations.html" title="c/language/declarations">声明</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
+<div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="pointer.html" title="c/language/pointer">指针</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="array.html" title="c/language/array">数组</a> </td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enum.html" title="c/language/enum"><span class="t-lines"><span>enum</span></span></a></div></div></td></tr>
@@ -210,8 +210,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
     <span class="sy2">++</span>s.<span class="me1">b</span><span class="sy4">;</span> <span class="co1">// 无符号溢出</span>
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, s.<span class="me1">b</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 输出： 0</span>
 <span class="br0">}</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <p>允许将多个相邻位域打包在一起（通常如此）：
 </p>
@@ -230,8 +228,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>,<span class="kw4">sizeof</span><span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 通常打印 4</span>
 <span class="br0">}</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <p>拥有零 <span class="t-spar">宽度</span> 的特殊<i>无名位域</i>打破填充：它指定下个位域在始于下个分配单元的起点：
 </p>
@@ -253,8 +249,6 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <span class="br0">{</span>
     <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 通常打印 8</span>
 <span class="br0">}</span></pre></div></div>
-<p><br> 
-</p>
 </div>
 <p>因为位域不必在字节的起点开始，故不能取位域的地址。不可能有指向位域的指针。不能对位域使用 <a href="sizeof.html" title="c/language/sizeof"><code>sizeof</code></a> <span class="t-rev-inl t-since-c11"><span>和 <a href="_Alignas.html" title="c/language/ Alignas"><code>_Alignas</code></a> </span> <span><span class="t-mark-rev t-since-c11">(C11 起)</span></span></span>。
 </p>
@@ -293,28 +287,28 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </p>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-17">
-<ul><li> C17 standard (ISO/IEC 9899:2018): 
+<ul><li> C17 标准（ISO/IEC 9899:2018）：
 </li></ul>
 <dl><dd><ul><li> 6.7.2.1 Structure and union specifiers 
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-11">
-<ul><li> C11 standard (ISO/IEC 9899:2011): 
+<ul><li> C11 标准（ISO/IEC 9899:2011）：
 </li></ul>
 <dl><dd><ul><li> 6.7.2.1 Structure and union specifiers 
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c99">
-<ul><li> C99 standard (ISO/IEC 9899:1999): 
+<ul><li> C99 标准（ISO/IEC 9899:1999）：
 </li></ul>
 <dl><dd><ul><li> 6.7.2.1 Structure and union specifiers 
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c89">
-<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+<ul><li> C89/C90 标准（ISO/IEC 9899:1990）： 
 </li></ul>
 <dl><dd><ul><li> 3.5.2.1 Structure and union specifiers 
 </li></ul>
@@ -327,15 +321,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 2483/1000000
-Preprocessor generated node count: 6479/1000000
-Post‐expand include size: 50622/2097152 bytes
-Template argument size: 10431/2097152 bytes
+Preprocessor visited node count: 2471/1000000
+Preprocessor generated node count: 6358/1000000
+Post‐expand include size: 50767/2097152 bytes
+Template argument size: 10413/2097152 bytes
 Highest expansion depth: 16/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:7974-0!*!0!!zh!*!zh!* and timestamp 20210113085858 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:7974-0!*!0!!zh!*!zh!* and timestamp 20211207194801 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -352,6 +346,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/language/bit_field">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2020年10月2日 (星期五) 18:47。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过4,350次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -366,7 +371,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.077 secs. -->
+</script><!-- Served in 0.691 secs. -->
 	</body>
-<!-- Cached 20210114084554 -->
+<!-- Cached 20211207194801 -->
 </html>

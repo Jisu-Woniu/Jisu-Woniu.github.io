@@ -119,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../regex.html" title="cpp/regex">regex</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header">标准库头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> 自立与有宿主实现</a> </td></tr>
@@ -141,7 +141,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../atomic.html" title="cpp/atomic">原子操作库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread">线程支持库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../regex.html" title="cpp/regex">正则表达式库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../regex.html" title="cpp/regex">正则表达式库</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv-h1"><td colspan="5"> 类</td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_regex.html" title="cpp/regex/basic regex"><span class="t-lines"><span>basic_regex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sub_match.html" title="cpp/regex/sub match"><span class="t-lines"><span>sub_match</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
@@ -319,7 +319,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="3"> 类型要求
 </td></tr>
 <tr class="t-par-req">
-<td colspan="3"> -<div class="spacer"></div><code>BidirIt</code> 必须满足<a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-style:italic">遗留双向迭代器</span> <span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">(LegacyBidirectionalIterator)</span> </a> 的要求。
+<td colspan="3"> -<div class="spacer"></div><code>BidirIt</code> 必须满足<a href="../named_req/BidirectionalIterator.html" title="cpp/named req/BidirectionalIterator"><span style="font-style:italic">老式双向迭代器</span> <span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">(LegacyBidirectionalIterator)</span> </a> 的要求。
 </td></tr></table>
 <h3><span class="mw-headline" id=".E8.BF.94.E5.9B.9E.E5.80.BC">返回值</span></h3>
 <p>若匹配存在则返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> ，否则返回 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> 。任一情况下，以下列方式更新对象 <code>m</code> ：
@@ -331,13 +331,16 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td colspan="2">  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">ready</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="kw2">true</span></span></span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td colspan="2">  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="kw2">true</span></span></span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td colspan="2">  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span></span></span>
 </td></tr>
+
 </table>
 <p>若匹配存在：
 </p>
@@ -349,11 +352,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span></span></span>
 </td>
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span>
@@ -361,11 +366,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <a href="ecmascript.html#.E5.AD.90.E8.A1.A8.E8.BE.BE.E5.BC.8F" title="cpp/regex/ecmascript">有标记子表达式</a>数加 1 ，即 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">1</span><span class="sy2">+</span>e.<span class="me1">mark_count</span><span class="br0">(</span><span class="br0">)</span></span></span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">first</span></span></span>
 </td>
 <td>  <code>first</code>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">second</span></span></span>
@@ -373,11 +380,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <code>first</code>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">matched</span></span></span>
 </td>
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> （匹配前缀为空）
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">first</span></span></span>
@@ -385,11 +394,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <code>last</code>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">second</span></span></span>
 </td>
 <td>  <code>last</code>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span>.<span class="me1">matched</span></span></span>
@@ -397,11 +408,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span> （匹配前缀为空）
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>.<span class="me1">first</span></span></span>
 </td>
 <td>  <code>first</code>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>.<span class="me1">second</span></span></span>
@@ -409,11 +422,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  <code>last</code>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>.<span class="me1">matched</span></span></span>
 </td>
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> （匹配整个序列）
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span>n<span class="br0">]</span>.<span class="me1">first</span></span></span>
@@ -421,17 +436,20 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td> 匹配<a href="ecmascript.html#.E5.AD.90.E8.A1.A8.E8.BE.BE.E5.BC.8F" title="cpp/regex/ecmascript">有标记子表达式</a> n 的序列起始，或若该子表达式不参与匹配则为 <code>last</code>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span>n<span class="br0">]</span>.<span class="me1">second</span></span></span>
 </td>
 <td> 匹配<a href="ecmascript.html#.E5.AD.90.E8.A1.A8.E8.BE.BE.E5.BC.8F" title="cpp/regex/ecmascript">有标记子表达式</a> n 的序列结尾，或若该子表达式不参与匹配则为 <code>last</code>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <span class="t-c"><span class="mw-geshi cpp source-cpp">m<span class="br0">[</span>n<span class="br0">]</span>.<span class="me1">matched</span></span></span>
 </td>
 <td> 若表达式 n 参与匹配则为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span> ，否则为 <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">false</span></span></span>
 </td></tr>
+
 </table>
 <h3><span class="mw-headline" id=".E6.B3.A8.E8.A7.A3">注解</span></h3>
 <p>因为 <code>regex_match</code> 只考虑完全匹配，故同一 regex 可能在 <code>regex_match</code> 和  <span class="t-lc"><a href="regex_search.html" title="cpp/regex/regex search">std::regex_search</a></span> 间给出不同的匹配：
@@ -553,15 +571,15 @@ baz.dat
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 4659/1000000
-Preprocessor generated node count: 10478/1000000
-Post‐expand include size: 95544/2097152 bytes
-Template argument size: 31052/2097152 bytes
+Preprocessor visited node count: 4467/1000000
+Preprocessor generated node count: 10381/1000000
+Post‐expand include size: 94318/2097152 bytes
+Template argument size: 31034/2097152 bytes
 Highest expansion depth: 25/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:3533-0!*!0!!zh!*!zh!* and timestamp 20210111073014 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:3533-0!*!0!!zh!*!zh!* and timestamp 20211110195854 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -578,6 +596,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/cpp/regex/regex_match">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2020年8月20日 (星期四) 22:02。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过14,817次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -592,7 +621,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.750 secs. -->
+</script><!-- Served in 2.636 secs. -->
 	</body>
-<!-- Cached 20210111073014 -->
+<!-- Cached 20211110195854 -->
 </html>

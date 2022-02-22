@@ -95,7 +95,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>‎ | <a href="../language.html" title="cpp/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp"> C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../language.html" title="cpp/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../header.html" title="cpp/header">标准库头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../freestanding.html" title="cpp/freestanding"> 自立与有宿主实现</a> </td></tr>
@@ -118,11 +118,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="../thread.html" title="cpp/thread">线程支持库</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="cpp/experimental">技术规范</a> </td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ 语言</a></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="basic_concepts.html" title="cpp/language/basic concepts">基本概念</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
+<div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="../keywords.html" title="cpp/keyword"> 语言关键词</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="charset.html" title="cpp/language/charset"> 字符集与编码</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="translation_phases.html" title="cpp/language/translation phases"> 翻译阶段</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../comments.html" title="cpp/comment"> 注释</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="main_function.html" title="cpp/language/main function"> <code>main()</code> 函数</a> </td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="punctuators.html" title="cpp/language/punctuators"> 标点</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="name.html" title="cpp/language/identifiers"> 名字和标识符</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="incomplete_type.html" title="cpp/language/type"> 类型</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="types.html" title="cpp/language/types"> 基础类型</a> </td></tr>
@@ -471,28 +473,28 @@ e2_t e2 <span class="sy1">=</span> e2_t<span class="sy4">::</span><span class="m
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">本节未完成<br>原因：[basic.scope.pdecl] 的剩余内容 </td></tr></table>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-c++17">
-<ul><li> C++17 standard (ISO/IEC 14882:2017): 
+<ul><li> C++17 标准（ISO/IEC 14882:2017）：
 </li></ul>
 <dl><dd><ul><li> 6.3 Scope [basic.scope]
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c++14">
-<ul><li> C++14 standard (ISO/IEC 14882:2014): 
+<ul><li> C++14 标准（ISO/IEC 14882:2014）：
 </li></ul>
 <dl><dd><ul><li> 3.3 Scope [basic.scope]
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c++11">
-<ul><li> C++11 standard (ISO/IEC 14882:2011): 
+<ul><li> C++11 标准（ISO/IEC 14882:2011）：
 </li></ul>
 <dl><dd><ul><li> 3.3 Scope [basic.scope]
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c++98">
-<ul><li> C++98 standard (ISO/IEC 14882:1998): 
+<ul><li> C++98 标准（ISO/IEC 14882:1998）：
 </li></ul>
 <dl><dd><ul><li> 3.3 Declarative regions and scopes [basic.scope]
 </li></ul>
@@ -506,14 +508,14 @@ e2_t e2 <span class="sy1">=</span> e2_t<span class="sy4">::</span><span class="m
 <!-- 
 NewPP limit report
 Preprocessor visited node count: 2119/1000000
-Preprocessor generated node count: 8567/1000000
-Post‐expand include size: 38519/2097152 bytes
-Template argument size: 14596/2097152 bytes
+Preprocessor generated node count: 8472/1000000
+Post‐expand include size: 39621/2097152 bytes
+Template argument size: 14664/2097152 bytes
 Highest expansion depth: 17/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:8006-0!*!0!!zh!*!zh!* and timestamp 20210114101532 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:8006-0!*!0!!zh!*!zh!* and timestamp 20211214193241 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -530,6 +532,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/cpp/language/scope">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2020年10月16日 (星期五) 03:08。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过11,338次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -544,7 +557,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 2.771 secs. -->
+</script><!-- Served in 2.361 secs. -->
 	</body>
-<!-- Cached 20210114101533 -->
+<!-- Cached 20211214193241 -->
 </html>

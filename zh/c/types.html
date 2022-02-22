@@ -119,7 +119,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../c.html" title="c">c</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink">类型支持</strong> </td></tr>
@@ -136,13 +136,14 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="experimental.html" title="c/experimental">技术规范</a> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">类型支持</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">类型支持</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="types/size_t.html" title="c/types/size t"><span class="t-lines"><span>size_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="types/ptrdiff_t.html" title="c/types/ptrdiff t"><span class="t-lines"><span>ptrdiff_t</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="types/NULL.html" title="c/types/NULL"><span class="t-lines"><span>NULL</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="types/max_align_t.html" title="c/types/max align t"><span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="types/offsetof.html" title="c/types/offsetof"><span class="t-lines"><span>offsetof</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="types/limits.html" title="c/types/limits">数值极限</a></td></tr>
+<tr class="t-nv"><td colspan="5"> <a href="types/integer.html" title="c/types/integer">定宽整数类型</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 </table></div><div></div></div></div></div><div class="t-navbar-sep"> </div></div>
 <h3><span class="mw-headline" id=".E5.9F.BA.E6.9C.AC.E7.B1.BB.E5.9E.8B">基本类型</span></h3>
 <h4><span class="mw-headline" id=".E8.AF.AD.E8.A8.80.E5.AE.9A.E4.B9.89.E7.9A.84.E5.9F.BA.E7.A1.80.E7.B1.BB.E5.9E.8B"><a href="language/type.html" title="c/language/types">语言定义的基础类型</a></span></h4>
@@ -188,11 +189,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   便利宏，展开成 <a href="keyword/_Bool.html" title="c/keyword/ Bool"><tt>_Bool</tt></a> <br> <span class="t-mark">(关键词宏)</span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>true</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   展开成<span class="t-rev-inl t-until-c23"><span>整数常量 <code>1</code></span> <span><span class="t-mark-rev t-until-c23">(C23 前)</span></span></span><span class="t-rev-inl t-since-c23"><span> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="br0">(</span>_Bool<span class="br0">)</span><span class="sy2">+</span>1u<span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-c23">(C23 起)</span></span></span> <br> <span class="t-mark">(宏常量)</span>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>false</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
@@ -200,11 +203,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   展开成<span class="t-rev-inl t-until-c23"><span>整数常量 <code>0</code></span> <span><span class="t-mark-rev t-until-c23">(C23 前)</span></span></span><span class="t-rev-inl t-since-c23"><span> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="br0">(</span>_Bool<span class="br0">)</span><span class="sy2">+</span>0u<span class="br0">)</span></span></span></span> <span><span class="t-mark-rev t-since-c23">(C23 起)</span></span></span> <br> <span class="t-mark">(宏常量)</span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__bool_true_false_are_defined</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   展开成整数常量 <code>1</code> <br> <span class="t-mark">(宏常量)</span>
 </td></tr>
+
 
 <tr class="t-dsc-header">
 <td colspan="2"> <div>定义于头文件 <code>&lt;stdalign.h&gt;</code> </div>
@@ -216,11 +221,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>  便利宏，展开成关键词 <a href="keyword/_Alignas.html" title="c/keyword/ Alignas"><tt>_Alignas</tt></a> <br> <span class="t-mark">(关键词宏)</span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>alignof</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  便利宏，展开成关键词 <a href="keyword/_Alignof.html" title="c/keyword/ Alignof"><tt>_Alignof</tt></a> <br> <span class="t-mark">(关键词宏)</span>
 </td></tr>
+
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__alignas_is_defined</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
@@ -228,11 +235,13 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <td>   展开成整数常量 <code>1</code> <br> <span class="t-mark">(宏常量)</span>
 </td></tr>
 
+
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__alignof_is_defined</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   展开成整数常量 <code>1</code> <br> <span class="t-mark">(宏常量)</span>
 </td></tr>
+
 
 <tr class="t-dsc-header">
 <td colspan="2"> <div>定义于头文件 <code>&lt;stdnoreturn.h&gt;</code> </div>
@@ -243,6 +252,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td>   便利宏，展开成 <a href="keyword/_Noreturn.html" title="c/keyword/ Noreturn"><tt>_Noreturn</tt></a> <br> <span class="t-mark">(关键词宏)</span>
 </td></tr>
+
 </table>
 <h4><span class="mw-headline" id=".E5.AE.9A.E5.AE.BD.E6.95.B4.E6.95.B0.E7.B1.BB.E5.9E.8B_.28C99_.E8.B5.B7.29"><a href="types/integer.html" title="c/types/integer">定宽整数类型</a> <span class="t-mark-rev t-since-c99">(C99 起)</span></span></h4>
 <h4><span class="mw-headline" id=".E6.95.B0.E5.80.BC.E6.9E.81.E9.99.90"><a href="types/limits.html" title="c/types/limits">数值极限</a></span></h4>
@@ -281,7 +291,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </div>
 <h3><span class="mw-headline" id=".E5.BC.95.E7.94.A8">引用</span></h3>
 <div class="t-ref-std-17">
-<ul><li> C17 standard (ISO/IEC 9899:2018): 
+<ul><li> C17 标准（ISO/IEC 9899:2018）：
 </li></ul>
 <dl><dd><ul><li> 7.15 Alignment &lt;stdalign.h&gt; (p: 196)
 </li></ul>
@@ -300,7 +310,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 </div>
 <div class="t-ref-std-11">
-<ul><li> C11 standard (ISO/IEC 9899:2011): 
+<ul><li> C11 标准（ISO/IEC 9899:2011）：
 </li></ul>
 <dl><dd><ul><li> 7.15 Alignment &lt;stdalign.h&gt; (p: 268)
 </li></ul>
@@ -319,7 +329,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 </div>
 <div class="t-ref-std-c99">
-<ul><li> C99 standard (ISO/IEC 9899:1999): 
+<ul><li> C99 标准（ISO/IEC 9899:1999）：
 </li></ul>
 <dl><dd><ul><li> 7.18 Boolean type and values &lt;stdbool.h&gt; (p: 253)
 </li></ul>
@@ -332,7 +342,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </dd></dl>
 </div>
 <div class="t-ref-std-c89">
-<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+<ul><li> C89/C90 标准（ISO/IEC 9899:1990）： 
 </li></ul>
 <dl><dd><ul><li> 4.1.5 Common definitions &lt;stddef.h&gt; 
 </li></ul>
@@ -345,15 +355,15 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 3257/1000000
-Preprocessor generated node count: 7623/1000000
-Post‐expand include size: 67408/2097152 bytes
-Template argument size: 16745/2097152 bytes
+Preprocessor visited node count: 3127/1000000
+Preprocessor generated node count: 7521/1000000
+Post‐expand include size: 68185/2097152 bytes
+Template argument size: 16817/2097152 bytes
 Highest expansion depth: 20/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1390-0!*!0!!zh!*!zh!* and timestamp 20210126110715 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1390-0!*!0!!zh!*!zh!* and timestamp 20211207102110 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
@@ -370,6 +380,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/types">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2020年11月12日 (星期四) 11:42。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过28,023次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -384,7 +405,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.526 secs. -->
+</script><!-- Served in 0.432 secs. -->
 	</body>
-<!-- Cached 20210126110715 -->
+<!-- Cached 20211207102110 -->
 </html>

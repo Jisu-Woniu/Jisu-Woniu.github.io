@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh" dir="ltr" class="client-nojs">
 <head>
-<title>实验性 C 标准库</title>
+<title>实验性 C 特性</title>
 <meta charset="UTF-8">
 <meta name="generator" content="MediaWiki 1.21.2">
 <link rel="shortcut icon" href="../../common/favicon.ico">
@@ -13,7 +13,7 @@
 
 <script src="../../common/startup_scripts.js"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/experimental","wgTitle":"c/experimental","wgCurRevisionId":61880,"wgArticleId":8010,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"c/experimental","wgUserVariant":"zh","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"c/experimental","wgTitle":"c/experimental","wgCurRevisionId":72844,"wgArticleId":8010,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"c/experimental","wgUserVariant":"zh","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
 "watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"zh","language":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-MathJax":1,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
@@ -32,7 +32,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;"></div>
                                 <!-- firstHeading -->
-<h1 id="firstHeading" class="firstHeading">实验性 C 标准库</h1>
+<h1 id="firstHeading" class="firstHeading">实验性 C 特性</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
@@ -43,7 +43,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
                     <div id="contentSub"><span class="subpages">&lt; <a href="../c.html" title="c">c</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+                    <div id="mw-content-text" lang="zh" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep"> </div><div class="t-navbar-head"><a href="../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="language.html" title="c/language">语言</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="header.html" title="c/header">头文件</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="types.html" title="c/types">类型支持</a> </td></tr>
@@ -60,7 +60,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <tr class="t-nv"><td colspan="5"> <a href="thread.html" title="c/thread">线程支持</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="atomic.html" title="c/atomic">原子操作</a> <span class="t-mark-rev t-since-c11">(C11)</span> </td></tr>
 <tr class="t-nv"><td colspan="5"> <strong class="selflink">技术规范</strong> </td></tr>
-</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">技术规范</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+</table></div><div></div></div></div></div><div class="t-navbar-sep"> </div><div class="t-navbar-head"><strong class="selflink">技术规范</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em">
 <tr class="t-nv"><td colspan="5"> <a href="https://zh.cppreference.com/mwiki/index.php?title=c/experimental/embedded&amp;action=edit&amp;redlink=1" class="new" title="c/experimental/embedded（页面不存在）">对嵌入式处理器的扩展</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="experimental/dynamic.html" title="c/experimental/dynamic">动态内存扩展</a> </td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="experimental/fpext1.html" title="c/experimental/fpext1">浮点扩展部分 1 ：二进制浮点</a> </td></tr>
@@ -84,8 +84,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 支持新字符类型的扩展
 </td>
-<td> 出版（<a rel="nofollow" class="external text" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=33907">ISO商店</a>）
-<p>最终方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1040.pdf">n1040</a> (2003-11-07)<br>并入 C11
+<td> 出版（ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/33907.html">ISO 商店</a>）
+<p>最终草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1040.pdf">n1040</a> (2003-11-07)<br><span style="font-size:21px;color:green"><b>✔</b></span>并入 C11 。
 </p>
 </td>
 <td>
@@ -97,8 +97,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 边界检查接口
 </td>
-<td> 出版（ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=38841">ISO 商店</a>）
-<p>最终方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1225.pdf">n1225</a> (2007-03-28)<br>并入 C11
+<td> 出版（ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/38841.html">ISO 商店</a>）
+<p>最终草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1225.pdf">n1225</a> (2007-03-28)<br><span style="font-size:21px;color:green"><b>✔</b></span>并入 C11 。
 </p>
 </td>
 <td>
@@ -110,8 +110,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 支持嵌入式处理器的扩展
 </td>
-<td> 出版（ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=51126">ISO 商店</a>）
-<p>最终方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/SC22/wg14/www/docs/n1169.pdf">n1169</a> (2006-04-04)
+<td> 出版（ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/51126.html">ISO 商店</a>）
+<p>最终草案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/SC22/wg14/www/docs/n1169.pdf">n1169</a> (2006-04-04)
 </p>
 </td>
 <td>
@@ -123,9 +123,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 支持十进制浮点算术的扩展
 </td>
-<td> 出版（ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=38842">ISO 商店</a>）
-<p>最终方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1241.pdf">n1241</a> (2007-07-05)<br>
-为TS 18661-2:2015所代替
+<td> 出版（ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/38842.html">ISO 商店</a>）
+<p>最终草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1241.pdf">n1241</a> (2007-07-05)<br>
+为 TS 18661-2:2015 所代替
 </p>
 </td>
 <td>
@@ -137,8 +137,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 支持特殊数学函数的扩展
 </td>
-<td> 出版（ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=38857">ISO 商店</a>）
-<p>方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1182.pdf">n1182</a> (2006-08-02)
+<td> 出版（ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/38857.html">ISO 商店</a>）
+<p>草案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1182.pdf">n1182</a> (2006-08-02)
 </p>
 </td>
 <td>
@@ -150,8 +150,8 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 支持动态分配函数的扩展
 </td>
-<td> 出版于 2010-11-24 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=51678">ISO 商店</a>）
-<p>方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1248.pdf">n1248</a> (2007-08-15)
+<td> 出版于 2010-11-24 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/51678.html">ISO 商店</a>）
+<p>草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1248.pdf">n1248</a> (2007-08-15)
 </p>
 </td>
 <td> <a href="experimental/dynamic.html" title="c/experimental/dynamic">dynamic</a>
@@ -163,9 +163,9 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </td>
 <td> 安全编码规则
 </td>
-<td> 出版于 2013-11-15 （<a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=61134">ISO 商店</a>）
-<p>方案：<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1624.pdf">n1624</a> (2012-06-26)<br>
-TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=72086">ISO 商店</a>）
+<td> 出版于 2013-11-15 （<a rel="nofollow" class="external text" href="https://www.iso.org/standard/61134.html">ISO 商店</a>）
+<p>草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1624.pdf">n1624</a> (2012-06-26)<br>
+TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/72086.html">ISO 商店</a>）
 </p>
 </td>
 <td>
@@ -177,10 +177,10 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 浮点扩展：二进制浮点算术
 </td>
-<td> 出版于 2014-07-21 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=63146">ISO 商店</a>）
-<p>方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/sc22/wg14/www/docs/n1778.pdf">n1778</a> (2013-11-05)
-</p><p>C2x 方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2314.pdf">n2314</a> (2018-11-12)
-</p><p>并入 C2x 。
+<td> 出版于 2014-07-21 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/63146.html">ISO 商店</a>）
+<p>草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/sc22/wg14/www/docs/n1778.pdf">n1778</a> (2013-11-05)
+</p><p>C2x 草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2314.pdf">n2314</a> (2018-11-12)
+</p><p><span style="font-size:21px;color:green"><b>✔</b></span>并入 C23 。
 </p>
 </td>
 <td> <a href="experimental/fpext1.html" title="c/experimental/fpext1">fpext1</a>
@@ -192,9 +192,9 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 浮点扩展：十进制浮点算术
 </td>
-<td> 出版于 2015-02-11 ，修订于 2015-05-18 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_ics/catalogue_detail_ics.htm?csnumber=68882">ISO 商店</a>）
-<p>C2x 方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2341.pdf">n2341</a> (2019-02-26)
-</p><p>并入 C2x 。
+<td> 出版于 2015-02-11 ，修订于 2015-05-18 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/68882.html">ISO 商店</a>）
+<p>C2x 草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2341.pdf">n2341</a> (2019-02-26)
+</p><p><span style="font-size:21px;color:green"><b>✔</b></span>并入 C23 。
 </p>
 </td>
 <td>
@@ -206,8 +206,9 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 浮点扩展：交流及扩展类型
 </td>
-<td> 出版于 2015-10-06 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65615">ISO 商店</a>）。方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1945.pdf">n1945</a> (2015-06-10) 。
-<p>C2x 方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2405.pdf">n2405</a> (2019-07-11)
+<td> 出版于 2015-10-06 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/65615.html">ISO ISO 商店</a>）。草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1945.pdf">n1945</a> (2015-06-10) 。
+<p>C2x 草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2601.pdf">n2601</a> (2020-10-15)
+</p><p><span style="font-size:21px;color:green"><b>✔</b></span>并入 C23 。
 </p>
 </td>
 <td>
@@ -219,8 +220,9 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 浮点扩展：补充函数
 </td>
-<td> 出版于 2015-10-06 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65616">ISO 商店</a>）。方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1950.pdf">n1950</a> (2015-06-10) 。
-<p>C2x 方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2401.pdf">n2401</a> (2019-06-23)
+<td> 出版于 2015-10-06 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/65616.html">ISO 商店</a>）。草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1950.pdf">n1950</a> (2015-06-10) 。
+<p>C2x 草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2401.pdf">n2401</a> (2019-06-23)
+</p><p><span style="font-size:21px;color:green"><b>✔</b></span>部分并入 C23 。
 </p>
 </td>
 <td> <a href="experimental/fpext4.html" title="c/experimental/fpext4">fpext4</a>
@@ -232,20 +234,20 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 浮点扩展：补充属性
 </td>
-<td> 出版于 2016-08-11 （ <a rel="nofollow" class="external text" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=65617">ISO 商店</a>）
-<p>方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2004.pdf">n2004</a> (2016-03-07)
+<td> 出版于 2016-08-11 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/65617.html">ISO 商店</a>）
+<p>草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2004.pdf">n2004</a> (2016-03-07)
 </p>
 </td>
 <td>
 </td></tr>
 <tr>
 <td> ISO/IEC TR
-<p>24772-3
+<p>24772-3:2020
 </p>
 </td>
 <td> 编程语言 C 的脆弱性描述
 </td>
-<td> 方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2169.pdf">n2169</a> (2017-04-07)
+<td> 出版于 2020-05-20 （ <a rel="nofollow" class="external text" href="https://www.iso.org/standard/71093.html">ISO 商店</a>）。草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2169.pdf">n2169</a> (2017-04-07)
 </td>
 <td>
 </td></tr>
@@ -254,7 +256,7 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 事务性内存 TS
 </td>
-<td> 早期方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1961.pdf">n1961</a> (2015-09-23)
+<td> 早期草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1961.pdf">n1961</a> (2015-09-23)
 </td>
 <td>
 </td></tr>
@@ -270,13 +272,22 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 <td>
 </td></tr>
 <tr>
+<td> ISO/IEC AWI TS 6010
+</td>
+<td> C 的具备来源的内存对象模型
+</td>
+<td> 早期草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2676.pdf">n2676</a> (2021-03-24)
+</td>
+<td>
+</td></tr>
+<tr>
 <td> ISO/IEC TS
 <p>21938-1
 </p>
 </td>
 <td> 并行扩展部分 1 ：基于线程的并行
 </td>
-<td> 早期方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2170.pdf">n2170</a> (2017-09-21) （废弃）
+<td> 早期草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2170.pdf">n2170</a> (2017-09-21)<br><span style="font-size:21px;color:red"><b>×</b></span>（废弃）
 </td>
 <td>
 </td></tr>
@@ -285,7 +296,7 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 </td>
 <td> 并行扩展部分 2 ：基于向量的并行
 </td>
-<td> 早期部分方案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2081.htm">n2081</a> (2016-09-15) （废弃）
+<td> 早期部分草案： <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2081.htm">n2081</a> (2016-09-15)<br><span style="font-size:21px;color:red"><b>×</b></span>（废弃）
 </td>
 <td>
 </td></tr></table>
@@ -296,19 +307,19 @@ TC1 出版于 2016-08-09 （ <a rel="nofollow" class="external text" href="http:
 
 <!-- 
 NewPP limit report
-Preprocessor visited node count: 395/1000000
-Preprocessor generated node count: 2119/1000000
-Post‐expand include size: 15890/2097152 bytes
-Template argument size: 1429/2097152 bytes
+Preprocessor visited node count: 429/1000000
+Preprocessor generated node count: 2112/1000000
+Post‐expand include size: 16662/2097152 bytes
+Template argument size: 1438/2097152 bytes
 Highest expansion depth: 13/40
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:8010-0!*!0!*!*!*!zh!* and timestamp 20210109012148 -->
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:8010-0!*!0!*!*!*!zh!* and timestamp 20211022193457 -->
 </div>                    <!-- /bodycontent -->
                                         <!-- printfooter -->
                     <div class="printfooter">
-                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=c/experimental&amp;oldid=61880">https://zh.cppreference.com/mwiki/index.php?title=c/experimental&amp;oldid=61880</a>”                    </div>
+                    来自“<a href="https://zh.cppreference.com/mwiki/index.php?title=c/experimental&amp;oldid=72844">https://zh.cppreference.com/mwiki/index.php?title=c/experimental&amp;oldid=72844</a>”                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
                     <!-- /catlinks -->
@@ -321,6 +332,17 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>导航</h5>
+            <ul><li><a href="https://zh.cppreference.com/w/c/experimental">Online version</a></li><li>Offline version retrieved 2022-01-01 00:37.</li></ul></div>
+                        <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> 本页面最后修改于2021年10月19日 (星期二) 03:31。</li>
+                                    <li id="footer-info-viewcount">此页面已被浏览过10,317次。</li>
+                            </ul>
+                    </div>
+        </div>
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -335,7 +357,7 @@ var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-2828341-1']);
 _gaq.push(['_setDomainName', 'cppreference.com']);
 _gaq.push(['_trackPageview']);
-</script><!-- Served in 0.228 secs. -->
+</script><!-- Served in 0.305 secs. -->
 	</body>
-<!-- Cached 20210109012148 -->
+<!-- Cached 20211022193458 -->
 </html>
